@@ -14,8 +14,8 @@ export default function Input({setTodos, todos}) {
         setTitle('')
     }
   return (
-    <div>
-      <input type="text" placeholder='Enter the todos' value={title} onChange={handleChange} />
+    <div className='input'>
+      <input type="search" placeholder='Enter the todos' value={title} onChange={handleChange} />
       <button onClick={handleClick} >Add</button>
     </div>
   )

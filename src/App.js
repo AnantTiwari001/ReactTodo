@@ -9,7 +9,7 @@ import Id from './Id.js'
 function App() {
   const [todos, setTodos]= useState([{title:'hello world what is up friends', id:Id()}])
   return (
-    <div>
+    <div className='container'>
     <Title/>
     <Input todos={todos} setTodos={setTodos} />
     <List todos={todos} setTodos={setTodos} />

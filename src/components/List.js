@@ -21,7 +21,7 @@ export default function list({todos,setTodos}) {
       {todos.map((todo)=>{
         return (
             <li key={todo.id}>
-                <h2>{todo.title} </h2>
+                <div>{todo.title} </div>
                 <button onClick={()=> handleDelete(todo.id)}>Delete</button>
             </li>
         )
